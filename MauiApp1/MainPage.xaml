@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Models="clr-namespace:MauiApp1.ViewModels"
+             x:Class="MauiApp1.MainPage">
+
+    <StackLayout Padding="10" BackgroundColor="Black" Spacing="10">
+        <Frame CornerRadius="20" BackgroundColor="Gray">
+            <Label HorizontalTextAlignment="Start" Padding="20" FontSize="30" x:Name="ResultTxt">
+            </Label>
+        </Frame>
+        <Grid Margin="5" ColumnSpacing="5" RowSpacing="5">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="BtnPlus" Grid.Column="0" Grid.Row="0" Text="+" FontSize="40"></Button>
+            <Button x:Name="BtnMinus" Grid.Column="1" Grid.Row="0" Text="-" FontSize="40"></Button>
+            <Button x:Name="BtnPowerTwo" Grid.Column="2" Grid.Row="0" Text="X^2" FontSize="40"></Button>
+            <Button x:Name="BtnClear" Grid.Column="3" Grid.Row="0" Text="cls" FontSize="40"></Button>
+            <Button x:Name="BtnOne" Grid.Column="0" Grid.Row="1" Text="1" FontSize="40"></Button>
+            <Button x:Name="BtnTwo" Grid.Column="1" Grid.Row="1" Text="2" FontSize="40"></Button>
+            <Button x:Name="BtnThree" Grid.Column="2" Grid.Row="1" Text="3" FontSize="40"></Button>
+            <Button x:Name="BtnDivide" Grid.Column="3" Grid.Row="1" Text="/" FontSize="40"></Button>
+            <Button x:Name="BtnFour" Grid.Column="0" Grid.Row="2" Text="4" FontSize="40"></Button>
+            <Button x:Name="BtnFive" Grid.Column="1" Grid.Row="2" Text="5" FontSize="40"></Button>
+            <Button x:Name="BtnSix" Grid.Column="2" Grid.Row="2" Text="6" FontSize="40"></Button>
+            <Button x:Name="BtnMultiply" Grid.Column="3" Grid.Row="2" Text="*" FontSize="40"></Button>
+            <Button x:Name="BtnSeven" Grid.Column="0" Grid.Row="3" Text="7" FontSize="40"></Button>
+            <Button x:Name="BtnEight" Grid.Column="1" Grid.Row="3" Text="8" FontSize="40"></Button>
+            <Button x:Name="BtnNine" Grid.Column="2" Grid.Row="3" Text="9" FontSize="40"></Button>
+            <Button x:Name="BtnShowResult" Grid.Column="3" Grid.Row="3" Text="=" FontSize="40"></Button>
+            <Button x:Name="BtnDot" Grid.Column="0" Grid.Row="4" Text="." FontSize="40"></Button>
+            <Button x:Name="BtnZero" Grid.Column="1" Grid.Row="4" Text="0" FontSize="40"></Button>
+            <Button x:Name="Btn2Zero" Grid.Column="2" Grid.Row="4" Text="00" FontSize="40"></Button>
+            <Button x:Name="Btn3Zero" Grid.Column="3" Grid.Row="4" Text="000" FontSize="30"></Button>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
